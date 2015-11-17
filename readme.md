@@ -1,3 +1,7 @@
-This is miminum code required for an Azure Flask project deployment. 
+This is a short demo for Bing image search paired with Project Oxford!
 
-Check out my [blog post](http://timmyreilly.azurewebsites.net/starter-site-for-flask-on-azure-web-apps/) if you have any other questions. 
+https://www.projectoxford.ai
+
+https://datamarket.azure.com 
+
+
