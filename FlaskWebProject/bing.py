@@ -3,10 +3,11 @@ from tokens import *
 import urllib
 import urllib2
 import json
-from flask_restful import Resource 
+#from flask_restful import Resource 
 
-class Bing_Search(Resource):
-	def search(self, search_type, query):
+def bing_image_return(query):
+	try:
+		search_type = 'Image'
 		key = bing_token
 		query = urllib.quote(query)
 		user_agent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FDM; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 1.1.4322)'
@@ -21,5 +22,8 @@ class Bing_Search(Resource):
 		response_data = response.read()
 		json_result = json.loads(response_data)
 		result_list = json_result['d']['results']
-		print result_list
-		return result_list
+		#print json.dumps(json_result, indent=4, sort_keys=True )
+		return json_result['d']['results'][0]['MediaUrl']
+	except IndexError:
+		return "http://www.oberonplace.com/tutor/FileNotFound.gif"	
+		
