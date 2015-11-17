@@ -14,6 +14,9 @@ __pycache__/
 *.user
 *.sln.docstates
 
+# Tokens
+tokens.py
+
 # Auto-generated virtual environment
 /env/
 

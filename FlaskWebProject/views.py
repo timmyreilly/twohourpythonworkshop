@@ -15,3 +15,9 @@ def home():
         title='Home Page',
         year=datetime.now().year,
     )
+    
+@app.route('/search')
+def search():
+    return 'search'
+    
+    
