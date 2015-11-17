@@ -3,11 +3,14 @@ from tokens import *
 import urllib
 import urllib2
 import json
+import base64 
 
 from projectoxford import Client, Vision 
 #from flask_restful import Resource
 
 client = Client(oxford_computer_vision) 
+
+
 
 def bing_image_return(query):
 	try:
@@ -31,11 +34,22 @@ def bing_image_return(query):
 	except IndexError:
 		return "http://www.oberonplace.com/tutor/FileNotFound.gif"	
 
+# def return_oxford_thumbnail_binary(url):
+# 	print 'here'
+# 	print url
+# 	result = client.vision.thumbnail({'url' : url})
+# 	print result
+# 	print type(result)
+# 	return result 
+
 def return_oxford_thumbnail_binary(url):
-	print 'here'
-	print url
-	result = client.vision.thumbnail({'url' : url})
-	print result
-	return result 
+	binarystream = client.vision.thumbnail({'url': url, 'width': 400, 'height': 400})
+	encoded = base64.b64encode(binarystream)
+	#print binarystream
+	#print encoded 
+	return encoded 
 	
+
+	
+		
 	
