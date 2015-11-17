@@ -50,6 +50,8 @@ import this
 
 ## 3: Run our first program
 
+Use your favorite text editor. I'm using [Visual Studio Code](https://code.visualstudio.com/)
+
 beginnings.py
 
 ```python 
