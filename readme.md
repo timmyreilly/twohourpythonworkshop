@@ -1,6 +1,4 @@
-This is the beggining!
-
-Become a Python hacker by hacking!
+#Two Hour Python Hacker
 
 2 hours from now we hope to have a small application on the cloud!
 
@@ -22,13 +20,13 @@ There are a number of things we want to accomplish today.
 #Let's do this
 
 
-## 1: Install Python
+## 1. Install Python
 
 [Windows](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environmentsetup/)
 
 [Mac](http://docs.python-guide.org/en/latest/starting/install/osx/)
 
-## 2: use the REPL
+## 2. use the REPL
 
 The REPL stands for Read Evaluate Print Loop
 
@@ -48,7 +46,7 @@ import this
 
 [More Practice](http://timmyreilly.azurewebsites.net/python-introduction/)
 
-## 3: Run our first program
+## 3. Run our first program
 
 Use your favorite text editor. I'm using [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -64,7 +62,7 @@ for letter in sentence:
 print sentence_no_vowels
 ```
 
-## 4: Install a package
+## 4. Install a package
 	
 Python Packages are installed with pip
 
