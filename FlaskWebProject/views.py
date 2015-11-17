@@ -26,8 +26,7 @@ def home():
 @app.route('/search/<q>/')
 def search(q='kangaroo'):
     url = bing_image_return(str(q))
-    thumbnailed_url = url
-    print url 
+    thumbnailed_url = return_oxford_thumbnail_binary(str(url)) 
     return render_template(
         'searched.html',
         title = 'Searched',

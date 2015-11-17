@@ -3,7 +3,11 @@ from tokens import *
 import urllib
 import urllib2
 import json
-#from flask_restful import Resource 
+
+from projectoxford import Client, Vision 
+#from flask_restful import Resource
+
+client = Client(oxford_computer_vision) 
 
 def bing_image_return(query):
 	try:
@@ -26,4 +30,12 @@ def bing_image_return(query):
 		return json_result['d']['results'][0]['MediaUrl']
 	except IndexError:
 		return "http://www.oberonplace.com/tutor/FileNotFound.gif"	
-		
+
+def return_oxford_thumbnail_binary(url):
+	print 'here'
+	print url
+	result = client.vision.thumbnail({'url' : url})
+	print result
+	return result 
+	
+	
