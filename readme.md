@@ -22,7 +22,7 @@ There are a number of things we want to accomplish today.
 
 ## 1. Install Python
 
-[Windows](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environmentsetup/)
+[Windows](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/)
 
 [Mac](http://docs.python-guide.org/en/latest/starting/install/osx/)
 
