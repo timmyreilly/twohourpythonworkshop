@@ -43,7 +43,7 @@ def bing_image_return(query):
 # 	return result 
 
 def return_oxford_thumbnail_binary(url):
-	binarystream = client.vision.thumbnail({'url': url, 'width': 400, 'height': 400})
+	binarystream = client.vision.thumbnail({'url': url, 'width': 400, 'height': 200})
 	encoded = base64.b64encode(binarystream)
 	#print binarystream
 	#print encoded 
