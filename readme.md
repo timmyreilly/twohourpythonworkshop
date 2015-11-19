@@ -147,6 +147,18 @@ python hello.py
 
 [Project Oxford](https://www.projectoxford.ai/)
 
+Also you will need to install the projectoxford module.  Enter the following line into terminal:
+
+```
+pip install projectoxford
+```
+
+or on linux/mac:
+
+```
+sudo pip install projectoxford
+```
+
 ## 11. Create a webapp
 
 We'll start from a project I've already built: 
